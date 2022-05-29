@@ -1,0 +1,21 @@
+{
+    "name": "learn-socket-io",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "concurrently \"cd server && npm run start:dev && tsc -w\" \"cd client && npm start\"",
+        "start": "cd server && npm run start:prod",
+        "install": "npm i && cd server && npm i && cd ../client && npm i"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^7.2.1",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "@types/morgan": "^1.9.3"
+    }
+}
